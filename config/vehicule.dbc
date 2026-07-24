@@ -1,0 +1,17 @@
+VERSION ""
+
+NS_ :
+
+BS_:
+
+BU_: BMS MCU
+
+BO_ 256 Battery_State: 8 BMS
+ SG_ Battery_Voltage : 0|16@1+ (0.1,0) [0|500] "V" MCU
+ SG_ Battery_Current : 16|16@1- (0.1,0) [-200|200] "A" MCU
+ SG_ Battery_Temp : 32|8@1+ (1,-40) [-40|125] "degC" MCU
+
+BO_ 512 Motor_State: 8 MCU
+ SG_ Phase_Current_RMS : 0|16@1+ (0.1,0) [0|500] "A" MCU
+ SG_ Harmonic_Defect_Amp : 16|16@1+ (0.01,0) [0|50] "A" MCU
+ SG_ Motor_RPM : 32|16@1+ (1,0) [0|15000] "rpm" MCU

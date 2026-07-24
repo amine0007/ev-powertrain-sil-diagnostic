@@ -1,0 +1,3 @@
+/home/zniyed/auto_project/build/CMakeFiles/ecu_diag.dir
+/home/zniyed/auto_project/build/CMakeFiles/edit_cache.dir
+/home/zniyed/auto_project/build/CMakeFiles/rebuild_cache.dir
