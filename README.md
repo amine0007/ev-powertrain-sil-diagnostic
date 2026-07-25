@@ -10,6 +10,8 @@ An end-to-end **Software-in-the-Loop (SIL)** diagnostic and telemetry platform f
 
 The platform simulates multi-node CAN bus telemetry, performs real-time state estimation (**Extended Kalman Filter - EKF**) for battery SoC/SoH, executes **DSP spectral analysis** (FFT/Harmonic tracking) for inverter fault detection, and displays live telemetry on an industrial dark-mode cockpit dashboard.
 
+![HIL Telemetry Cockpit Dashboard](./assets/dashboard_preview.png)
+
 ---
 
 ## 🏗️ System Architecture
@@ -33,5 +35,3 @@ The platform simulates multi-node CAN bus telemetry, performs real-time state es
   |           HIL Telemetry Cockpit Dashboard             |
   |      (FastAPI + Plotly / Live Web Telemetry Engine)   |
   +-------------------------------------------------------+
-
-![HIL Telemetry Cockpit Dashboard](./assets/dashboard_preview.png)
