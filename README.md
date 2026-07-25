@@ -33,3 +33,11 @@ The platform simulates multi-node CAN bus telemetry, performs real-time state es
   |           HIL Telemetry Cockpit Dashboard             |
   |      (FastAPI + Plotly / Live Web Telemetry Engine)   |
   +-------------------------------------------------------+
+
+---
+
+## 🖥️ Dashboard Preview (HIL Telemetry Cockpit)
+
+Interface web en temps réel affichant les métriques de la batterie, l'état de charge (SoC) et la détection de défauts d'onduleur (harmoniques) :
+
+![HIL Telemetry Cockpit Dashboard](assets/dashboard_preview.png)
