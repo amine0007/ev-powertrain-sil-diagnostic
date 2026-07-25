@@ -17,13 +17,13 @@ The platform simulates multi-node CAN bus telemetry, performs real-time state es
 ```text
   +-------------------------------------------------------+
   |              EV Powertrain Simulator                  |
-  |     (Python + SciPy + cantools + SocketCAN vcan0)     |
+  |      (Python + SciPy + cantools + SocketCAN vcan0)      |
   +---------------------------+---------------------------+
                               |
                               | CAN Frames (0x100 Battery / 0x200 Motor)
                               v
   +---------------------------+---------------------------+
-  |              C++17 ECU Diagnostic Engine              |
+  |               C++17 ECU Diagnostic Engine             |
   |  - Extended Kalman Filter (EKF) SoC Estimation        |
   |  - Signal Processing (Harmonic Fault Detector)        |
   +---------------------------+---------------------------+
@@ -33,11 +33,3 @@ The platform simulates multi-node CAN bus telemetry, performs real-time state es
   |           HIL Telemetry Cockpit Dashboard             |
   |      (FastAPI + Plotly / Live Web Telemetry Engine)   |
   +-------------------------------------------------------+
-
----
-
-## 🖥️ Dashboard Preview (HIL Telemetry Cockpit)
-
-Interface web en temps réel affichant les métriques de la batterie, l'état de charge (SoC) et la détection de défauts d'onduleur (harmoniques) :
-
-![HIL Telemetry Cockpit Dashboard](assets/dashboard_preview.png)
