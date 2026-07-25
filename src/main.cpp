@@ -111,8 +111,8 @@ int main() {
             }
             std::cout << std::endl;
         }
-    } // Fin du while
+    } 
 
     close(s);
     return 0;
-} // Fin du main
+}
