@@ -33,3 +33,5 @@ The platform simulates multi-node CAN bus telemetry, performs real-time state es
   |           HIL Telemetry Cockpit Dashboard             |
   |      (FastAPI + Plotly / Live Web Telemetry Engine)   |
   +-------------------------------------------------------+
+
+![HIL Telemetry Cockpit Dashboard](./assets/dashboard_preview.png)
