@@ -113,10 +113,9 @@ python3 scripts/bms_simulator.py
     └── main.cpp              # ECU Diagnostic Engine (EKF & DSP in C++17)
 ```
 
-## 📚 Notes
+## 🛠️ Key Technical Features
 
-- This project is designed for SIL / HIL-style validation and telemetry experimentation.
-- The virtual CAN setup makes it possible to test the full pipeline without physical CAN hardware.
-- The architecture is suitable for future extensions such as fault classification, predictive maintenance, and embedded deployment. is designed for SIL / HIL-style validation and telemetry experimentation.
-- The virtual CAN setup makes it possible to test the full pipeline without physical CAN hardware.
-- The architecture is suitable for future extensions such as fault classification, predictive maintenance, and embedded deployment.
+- CAN Bus Communication Protocol: Standard DBC database configuration (config/vehicule.dbc), multi-frame encoding/decoding operating over Linux SocketCAN (vcan0).
+- State Estimation (EKF): Non-linear battery model tracking $SoC$ under noisy current/voltage drive cycles using Eigen C++17.
+- DSP Inverter Diagnostic: Real-time signal analysis on motor phase current to identify parasitic 3rd-harmonics (signature of inverter IGBT or inter-turn short-circuit defects).
+- Live Telemetry Cockpit Dashboard: Web-based telemetry cockpit built with FastAPI and Plotly displaying dynamic metric cards, live phase current charts, and automated critical fault banners.
