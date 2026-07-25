@@ -98,17 +98,19 @@ python3 scripts/bms_simulator.py
 
 ```text
 .
+├── CMakeLists.txt            # CMake build setup
+├── README.md                 # Project documentation
 ├── assets/
 │   └── dashboard_preview.png
-├── build/
+├── config/
+│   └── vehicule.dbc          # CAN signal definition file
+├── include/
+│   └── eigen/                # Eigen C++ Linear Algebra library
 ├── scripts/
-│   ├── bms_simulator.py
-│   └── dashboard_web.py
-├── src/
-│   ├── ecu_diag.cpp
-│   └── ...
-├── CMakeLists.txt
-└── README.md
+│   ├── bms_simulator.py      # EV Physical Simulator & CAN Transmitter
+│   └── dashboard_web.py      # Telemetry Web Cockpit Server (FastAPI + Plotly)
+└── src/
+    └── main.cpp              # ECU Diagnostic Engine (EKF & DSP in C++17)
 ```
 
 ## 📚 Notes
